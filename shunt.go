@@ -9,12 +9,17 @@ import (
 	"fmt"
 )
 
-/* Create a function to convert
+/*	Create a function to convert
 expressions from infix notation to postfix notation. */
 func intopost(infix string) string {
-	pofix := ""
-
-	return pofix
+	//	Create a map of the special characters and assign values to keep track of the precedence of the characters(i.e. * has a higher precedence than . which has precedence over |).
+	specials := map[rune]int{'*': 10, '.': 9, '|': 8}
+	//	Initialise an empty array of runes
+	pofix := []rune{}
+	//	Create a stack to temporarily hold operators asthey are read from the string
+	s := []rune{}
+	//	Cast pofix to a string
+	return string(pofix)
 }
 
 func main() {
